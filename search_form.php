@@ -34,9 +34,9 @@
                     <option value="t">Title</option>
                     <option value="pt">- Periodical Title</option>
                     <option value="vt">- Video Title</option>
-                    <option value="">Author</option>
+                    <option value="a">Author</option>
                 </select>
-                <input class="searchinput" type="text" value="" name="SEARCH" style="width: 400px;">
+                <input class="searchinput" type="text" value="" name="SEARCH" style="width: 375px;">
                 <input class="searchsubmit" type="submit" value="Search">
                 <a class="searchlink" href="http://alice.library.ohiou.edu/search/X#" target="_blank">Advanced Search</a>
             </form>

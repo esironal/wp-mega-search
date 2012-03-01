@@ -49,19 +49,39 @@ function cleanString(str) {
 
 function AliceURL()
 {
-    var allURL="http://alice.library.ohiou.edu/search/X?SEARCH=";
-    var vidURL="http://alice.library.ohiou.edu/search~S2/X?SEARCH=";
+    var keywordURL="http://alice.library.ohiou.edu/search/X?SEARCH=(";
+    var titleURL="http://alice.library.ohiou.edu/search/t?SEARCH=";
+    var authorURL="http://alice.library.ohiou.edu/search/a?SEARCH=";
+
     
-    var allSuffix="&l=&m=&b=&searchscope=7&SORT=R&p=&Da=&Db=";
-    var vidSuffix="&searchscope=2&SORT=D";
+    var keywordSuffix=")&searchscope=7&SORT=D";
+    var titleSuffix="&submit=Search&searchscope=7";
+    var pTitleSuffix="&submit=Search&searchscope=1";
+    var vTitleSuffix="&submit=Search&searchscope=2";
+    var authorSuffix="&submit=Search&searchscope=7";
 
     var searchString = cleanString(document.alicesearch.SEARCH.value);
 
-    if(document.alicesearch.aliceselect.value == "v") {
-        return vidURL + searchString + vidSuffix;
-    } else {
-        return allURL + searchString + allSuffix;
+    var type = document.alicesearch.aliceselect.value;
+
+    switch(type) {
+        case "t":
+            return titleURL + searchString + titleSuffix;
+            break;
+        case "pt":
+            return titleURL + searchString + pTitleSuffix;
+            break;
+        case "vt":
+            return titleURL + searchString + vTitleSuffix;
+            break;
+        case "a":
+            return authorURL + searchString + authorSuffix;
+            break;
+        default:
+            return keywordURL + searchString + keywordSuffix;
+            break;
     }
+
 }
 
 function ErmURL()
