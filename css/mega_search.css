@@ -1,0 +1,40 @@
+#search-tabs .ui-tabs-nav li a {
+    padding: 0.5em 0.5em;
+    font-size: 12px;
+}
+
+#search-tabs ul {
+    margin-bottom: 0px;
+}
+
+.searchinput {
+    width: 470px;
+    font-size: 17px !important;
+}
+
+.searchsubmit {
+    font-size: 17px !important;
+}
+
+.searchtext {
+    font-size: 17px;
+}
+
+.searchlink {
+    float: right;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.searchtab {
+    height: 85px;
+}
+
+.search-area {
+    float: left;
+    width: 650px;
+}
+
+#crselect {
+    font-size: 14px;
+}

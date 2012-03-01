@@ -1,0 +1,4 @@
+Customized interface for searching resources outside the Wordpress site.
+
+Currently this is all done with search_form.php but eventually would like to make these
+individual tabs editable from the admin interface with no need to touch the code.
