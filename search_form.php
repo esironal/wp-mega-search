@@ -2,7 +2,7 @@
 
     <div id="search-tabs" class="ui-tabs" style="display: none;">
         <ul class="ui-tabs-nav">
-            <li><a href="#eds">Discovery</a></li>
+            <li><a href="#eds">ArticlesPlus</a></li>
             <li><a href="#alice">ALICE Catalog</a></li>
             <li><a href="#erm">Databases</a></li>
             <li><a href="#cr">Course Reserves</a></li>
@@ -18,7 +18,7 @@
                 <input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+AND+" />
                 <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
                 <div>
-                    <h2 class="searchtext">Search almost everything</h2><br/>
+                    <h2 class="searchtext">Search articles and more</h2><br/>
                     <input class="searchinput" id="ebscohostsearchtext" name="ebscohostsearchtext" type="text" />
                     <input class="searchsubmit" type="submit" value="Search" />
                 </div>
@@ -29,7 +29,7 @@
         <div class="searchtab" id="alice" class="ui-tabs-hide ui-tabs-panel">
             <form id="alicesearch" name="alicesearch" action="" onsubmit="window.open(AliceURL()); return false;"  method="post">
                 <h2 class="searchtext">Search for books, journal titles, videos, music, and more</h2><br/>
-                <select id="aliceselect">
+                <select id="aliceselect" style="width:120px;">
                     <option value="k">Keyword</option>
                     <option value="t">Title</option>
                     <option value="pt">- Periodical Title</option>
@@ -54,11 +54,11 @@
         <div class="searchtab" id="cr" class="ui-tabs-hide ui-tabs-panel">
             <form id="crsearch" name="crsearch" action="" onsubmit="window.open(ReservesURL()); return false;" method="post">
                 <h2 class="searchtext">Search for materials by course or instructor</h2><br/>
-                <select id="crselect">
+                <select id="crselect" style="width: 120px;">
                     <option value="r">Course</option>
                     <option value="p">Instructor</option>
                 </select>
-                <input class="searchinput" type="text" value="" name="SEARCH" style="width: 400px;">
+                <input class="searchinput" type="text" value="" name="SEARCH" style="width: 370px;">
                 <input class="searchsubmit" type="submit" value="Search">
             </form>
         </div>
