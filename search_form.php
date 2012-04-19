@@ -45,7 +45,7 @@
     
         <div class="searchtab" id="erm" class="ui-tabs-hide ui-tabs-panel">
             <form id="ermsearch" name="ermsearch" action="" onsubmit="window.open(ErmURL()); return false;"  method="post">
-                <h2 class="searchtext">Search for Databases by Name</h2><br/>
+                <h2 class="searchtext">Find Databases by Name</h2><br/>
                 <input class="searchinput" type="text" value="" name="SEARCH">
                 <input class="searchsubmit" type="submit" value="Search">
                 <a class="searchlink" href="http://alice.library.ohiou.edu/search/e#" target="_blank">Browse by Subject</a>
