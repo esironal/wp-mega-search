@@ -69,6 +69,7 @@
                 <h2 class="searchtext">Find subject and course-specific research guides</h2><br/>
                 <input class="searchinput" type="text" value="" name="SEARCH">
                 <input class="searchsubmit" type="submit" value="Search">
+                <a class="searchlink" href="http://libguides.library.ohiou.edu/browse.php?o=s"  target="_blank">Browse by Subject</a>
             </form>
         </div>
 
