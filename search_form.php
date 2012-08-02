@@ -19,7 +19,7 @@
                 <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
 
                 <div>
-                    <h2 class="searchtext">Find articles and more</h2>
+                    <h2 class="searchtext">Find articles, books, videos and more</h2>
                     <i class="info-hover icon-info-sign"></i>
                     <div class="ui-corner-all info-text ui-state-highlight" style="display: none;">
                         ArticlesPlus helps you find quality information quickly.  Find books and video, as well as journal, magazine, and newspaper articles on almost any topic.  Covers over 75% of the Libraries’ collections.
