@@ -38,6 +38,10 @@
     padding: 4px;    
 }
 
+.info-text:hover {
+    cursor: pointer;
+}
+
 .searchlink {
     float: right;
     padding: 5px;
