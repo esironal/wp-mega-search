@@ -34,9 +34,8 @@ jQuery(document).ready(function($) {
         function(e) {
             var text = $(this).siblings('.info-text');
 
-            
-            $(text).css('top', e.pageY - $(this).offset().top);
-            $(text).css('left', e.pageX - $(this).offset().left + $(text).width());
+            $(text).css('top', e.pageY - 20);
+            $(text).css('left', e.pageX + 20);
 
             left = $(text).css('left');
             $(text).fadeIn(); 
