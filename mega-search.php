@@ -38,7 +38,7 @@ class MegaSearch {
     
         ob_start();
 
-        require('search_form.php');
+        require('search_form.html');
     
         return ob_get_clean();
     }
