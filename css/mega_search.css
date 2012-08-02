@@ -1,6 +1,6 @@
 #search-tabs .ui-tabs-nav li a {
-    padding: 3px;
-    font-size: 12px;
+    padding: 5px;
+    font-size: 14px;
     font-weight: 700;
 }
 
@@ -19,6 +19,23 @@
 
 .searchtext {
     font-size: 17px;
+    float: left;
+}
+
+.info-hover {
+    margin: 10px 0 0 10px;
+}
+
+.info-hover:hover {
+    cursor: pointer;
+}
+
+.info-text {
+    position:absolute;
+    z-index:9999;
+    font-size:12px;
+    width:230px;
+    padding: 4px;    
 }
 
 .searchlink {

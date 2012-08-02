@@ -29,6 +29,23 @@ jQuery(document).ready(function($) {
        $(input).focus();
     }
 
+    /* Info Hover PopUp */
+    $('.info-hover').hover(
+        function(e) {
+            var text = $(this).siblings('.info-text');
+
+            
+            $(text).css('top', e.pageY - $(this).offset().top);
+            $(text).css('left', e.pageX - $(this).offset().left + $(text).width());
+
+            left = $(text).css('left');
+            $(text).fadeIn(); 
+        },
+        function(e) {
+           $(this).siblings('.info-text').fadeOut();
+        }        
+    );
+
 });
 
 function cleanString(str) {

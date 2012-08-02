@@ -12,24 +12,36 @@
         <div class="searchtab" id="eds" class="ui-tabs-hide ui-tabs-panel">
             <!-- EBSCOhost Custom Search Box Begins -->
             <form id="edssearch" action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
-                <input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
-                <input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s8447892&groupid=main&profid=eds&mode=and&cli0=FT1&clv0=Y&authtype=ip,guest" />
+                <input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="" />
+                <input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s8447892&groupid=main&profid=eds&mode=bool&lang=en&authtype=ip,guest" />
                 <input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db" />
-                <input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+AND+" />
+                <input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
                 <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
+
                 <div>
-                    <h2 class="searchtext">Find articles and more</h2><br/>
+                    <h2 class="searchtext">Find articles and more</h2>
+                    <i class="info-hover icon-info-sign"></i>
+                    <div class="ui-corner-all info-text ui-state-highlight" style="display: none;">
+                        ArticlesPlus helps you find quality information quickly.  Find books and video, as well as journal, magazine, and newspaper articles on almost any topic.  Covers over 75% of the Libraries’ collections.
+                    </div>
+                    <br/>
                     <input class="searchinput" id="ebscohostsearchtext" name="ebscohostsearchtext" type="text" />
                     <input class="searchsubmit" type="submit" value="Search" />
                 </div>
-                <a class="searchlink" href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=1&custid=s8447892&groupid=main&profid=eds&mode=and&cli0=FT1&clv0=Y&authtype=ip,guest" target="_blank">Advanced Search</a>
+                <a class="searchlink" href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=1&custid=s8447892&groupid=main&profid=eds&mode=and&cli0=FT1&clv0=Y&authtype=ip,guest" >Advanced Search</a>
             </form>
             <!-- EBSCOhost Custom Search Box Ends -->
         </div>
 
         <div class="searchtab" id="alice" class="ui-tabs-hide ui-tabs-panel">
-            <form id="alicesearch" name="alicesearch" action="" onsubmit="window.open(AliceURL()); return false;"  method="post">
-                <h2 class="searchtext">Find books, journal titles, videos, music, and more</h2><br/>
+            <form id="alicesearch" name="alicesearch" action="" onsubmit="window.location = AliceURL(); return false;"  method="get">
+                <h2 class="searchtext">Find books, journal titles, videos, music, and more</h2>
+                <i class="info-hover icon-info-sign"></i>
+                <div class="ui-corner-all info-text ui-state-highlight" style="display: none;">
+                    Find a books, videos, documents and maps in our collections, as well as journals, magazines or newspapers by title.
+                </div>
+                <div class="clearfix"></div>
+                <br/>
                 <select id="aliceselect" style="width:120px;">
                     <option value="k">Keyword</option>
                     <option value="t">Title</option>
@@ -39,22 +51,33 @@
                 </select>
                 <input class="searchinput" type="text" value="" name="SEARCH" style="width: 375px;">
                 <input class="searchsubmit" type="submit" value="Search">
-                <a class="searchlink" href="http://alice.library.ohiou.edu/search/X#" target="_blank">Advanced Search</a>
+                <a class="searchlink" href="http://alice.library.ohiou.edu/search/X#" >Advanced Search</a>
             </form>
         </div>
     
         <div class="searchtab" id="erm" class="ui-tabs-hide ui-tabs-panel">
-            <form id="ermsearch" name="ermsearch" action="" onsubmit="window.open(ErmURL()); return false;"  method="post">
-                <h2 class="searchtext">Find Databases by Name</h2><br/>
+            <form id="ermsearch" name="ermsearch" action="" onsubmit="window.location = ErmURL(); return false;"  method="get">
+                <h2 class="searchtext">Find Databases by Name</h2>
+                <i class="info-hover icon-info-sign"></i>
+                <div class="ui-corner-all info-text ui-state-highlight" style="display: none;">
+                    Browse by subject for discipline-specific databases or search for your favorite database by name.
+                </div>
+                <br/>
                 <input class="searchinput" type="text" value="" name="SEARCH">
                 <input class="searchsubmit" type="submit" value="Search">
-                <a class="searchlink" href="http://alice.library.ohiou.edu/search/e#" target="_blank">Browse by Subject</a>
+                <a class="searchlink" href="http://alice.library.ohiou.edu/search/e#">Browse by Subject</a>
             </form>
         </div>
 
         <div class="searchtab" id="cr" class="ui-tabs-hide ui-tabs-panel">
-            <form id="crsearch" name="crsearch" action="" onsubmit="window.open(ReservesURL()); return false;" method="post">
-                <h2 class="searchtext">Find materials by course or instructor</h2><br/>
+            <form id="crsearch" name="crsearch" action="" onsubmit="window.location  = ReservesURL(); return false;" method="get">
+                <h2 class="searchtext">Find materials by course or instructor</h2>
+                <i class="info-hover icon-info-sign"></i>
+                <div class="ui-corner-all info-text ui-state-highlight" style="display: none;">
+                    Find the print and electronic readings that your instructor has placed on reserve for your course.
+                </div>
+                <br/>
+                <div class="clearfix"></div>
                 <select id="crselect" style="width: 120px;">
                     <option value="r">Course</option>
                     <option value="p">Instructor</option>
@@ -65,11 +88,16 @@
         </div>
 
         <div class="searchtab" id="scg" class="ui-tabs-hide ui-tabs-panel">
-            <form id="scgsearch" name="scgsearch" action="" onsubmit="window.open(LibGuidesURL()); return false;" method="post">
-                <h2 class="searchtext">Find subject and course-specific research guides</h2><br/>
+            <form id="scgsearch" name="scgsearch" action="" onsubmit="window.location = LibGuidesURL(); return false;" method="get">
+                <h2 class="searchtext">Find subject and course-specific research guides</h2>
+                <i class="info-hover icon-info-sign"></i>
+                <div class="ui-corner-all info-text ui-state-highlight" style="display: none;">
+                    Alden’s subject librarians have assembled the best information resources by subject and for specific courses.
+                </div>
+                <br/>
                 <input class="searchinput" type="text" value="" name="SEARCH">
                 <input class="searchsubmit" type="submit" value="Search">
-                <a class="searchlink" href="http://libguides.library.ohiou.edu/browse.php?o=s"  target="_blank">Browse by Subject</a>
+                <a class="searchlink" href="http://libguides.library.ohiou.edu/browse.php?o=s">Browse by Subject</a>
             </form>
         </div>
 
