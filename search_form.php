@@ -35,7 +35,6 @@
 
         <div class="searchtab" id="alice" class="ui-tabs-hide ui-tabs-panel">
             <form id="alicesearch" name="alicesearch" action="" onsubmit="window.location = AliceURL(); return false;"  method="get">
-<<<<<<< HEAD
                 <h2 class="searchtext">Find books, journal titles, videos, music, and more</h2>
                 <i class="info-hover icon-info-sign"></i>
                 <div class="ui-corner-all info-text ui-state-highlight" style="display: none;">
@@ -43,9 +42,6 @@
                 </div>
                 <div class="clearfix"></div>
                 <br/>
-=======
-                <h2 class="searchtext">Find books, journal titles, videos, music, and more</h2><br/>
->>>>>>> 86b5b1f168f3a428cc68b1abec5fa46a0afd2176
                 <select id="aliceselect" style="width:120px;">
                     <option value="k">Keyword</option>
                     <option value="t">Title</option>
@@ -61,16 +57,12 @@
     
         <div class="searchtab" id="erm" class="ui-tabs-hide ui-tabs-panel">
             <form id="ermsearch" name="ermsearch" action="" onsubmit="window.location = ErmURL(); return false;"  method="get">
-<<<<<<< HEAD
                 <h2 class="searchtext">Find Databases by Name</h2>
                 <i class="info-hover icon-info-sign"></i>
                 <div class="ui-corner-all info-text ui-state-highlight" style="display: none;">
                     Browse by subject for discipline-specific databases or search for your favorite database by name.
                 </div>
                 <br/>
-=======
-                <h2 class="searchtext">Find Databases by Name</h2><br/>
->>>>>>> 86b5b1f168f3a428cc68b1abec5fa46a0afd2176
                 <input class="searchinput" type="text" value="" name="SEARCH">
                 <input class="searchsubmit" type="submit" value="Search">
                 <a class="searchlink" href="http://alice.library.ohiou.edu/search/e#">Browse by Subject</a>
@@ -79,7 +71,6 @@
 
         <div class="searchtab" id="cr" class="ui-tabs-hide ui-tabs-panel">
             <form id="crsearch" name="crsearch" action="" onsubmit="window.location  = ReservesURL(); return false;" method="get">
-<<<<<<< HEAD
                 <h2 class="searchtext">Find materials by course or instructor</h2>
                 <i class="info-hover icon-info-sign"></i>
                 <div class="ui-corner-all info-text ui-state-highlight" style="display: none;">
@@ -87,9 +78,6 @@
                 </div>
                 <br/>
                 <div class="clearfix"></div>
-=======
-                <h2 class="searchtext">Find materials by course or instructor</h2><br/>
->>>>>>> 86b5b1f168f3a428cc68b1abec5fa46a0afd2176
                 <select id="crselect" style="width: 120px;">
                     <option value="r">Course</option>
                     <option value="p">Instructor</option>
@@ -101,16 +89,12 @@
 
         <div class="searchtab" id="scg" class="ui-tabs-hide ui-tabs-panel">
             <form id="scgsearch" name="scgsearch" action="" onsubmit="window.location = LibGuidesURL(); return false;" method="get">
-<<<<<<< HEAD
                 <h2 class="searchtext">Find subject and course-specific research guides</h2>
                 <i class="info-hover icon-info-sign"></i>
                 <div class="ui-corner-all info-text ui-state-highlight" style="display: none;">
                     Alden’s subject librarians have assembled the best information resources by subject and for specific courses.
                 </div>
                 <br/>
-=======
-                <h2 class="searchtext">Find subject and course-specific research guides</h2><br/>
->>>>>>> 86b5b1f168f3a428cc68b1abec5fa46a0afd2176
                 <input class="searchinput" type="text" value="" name="SEARCH">
                 <input class="searchsubmit" type="submit" value="Search">
                 <a class="searchlink" href="http://libguides.library.ohiou.edu/browse.php?o=s">Browse by Subject</a>
