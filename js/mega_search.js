@@ -68,7 +68,6 @@ function AliceURL()
     var keywordURL="http://alice.library.ohiou.edu/search/X?SEARCH=(";
     var titleURL="http://alice.library.ohiou.edu/search/t?SEARCH=";
     var authorURL="http://alice.library.ohiou.edu/search/a?SEARCH=";
-
     
     var keywordSuffix=")&searchscope=7&SORT=D";
     var titleSuffix="&submit=Search&searchscope=7";
@@ -102,10 +101,9 @@ function AliceURL()
 
 function ErmURL()
 {
-    var baseURL="http://alice.library.ohiou.edu/search/X?SEARCH=(";
-    var suffixURL=" and rectype:rectypee)";
+    var baseURL="http://alice.library.ohiou.edu/search/a?searchtype=e&searcharg="
     var searchString = cleanString(document.ermsearch.SEARCH.value);
-    return baseURL + searchString + suffixURL;
+    return baseURL + searchString;
 }
 
 function ReservesURL() {
