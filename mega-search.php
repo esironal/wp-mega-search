@@ -23,6 +23,9 @@ class MegaSearch {
     public function register_scripts() {
         wp_register_script('mega_search',  plugins_url('/js/mega_search.js', __FILE__), array('jquery', 'jquery-ui-core', 'jquery-ui-tabs'), false, true);
         wp_enqueue_script('mega_search');
+
+        wp_register_script('ebscohostsearch', 'http://support.ebscohost.com/eit/scripts/ebscohostsearch.js');
+        wp_enqueue_script('ebscohostsearch');
     }
 
     public function ms_add_stylesheet() {
